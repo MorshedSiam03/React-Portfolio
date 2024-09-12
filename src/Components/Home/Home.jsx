@@ -5,7 +5,7 @@ import Technologies from '../Technologies/Technologies';
 
 const Home = () => {
     return (
-        <div className='container mx-auto font-montserrat '>
+        <div className='container mx-auto font-montserrat'>
             <Header></Header>
             <Banner></Banner>
             <Technologies></Technologies>

@@ -4,7 +4,6 @@ import {
   FaBars,
   FaFacebook,
   FaLinkedin,
-  FaTimes,
   FaTwitter,
 } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import motion from framer-motion
@@ -18,10 +17,15 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleClick = () => {
+    const clickSound = new Audio("/src/assets/Audio/mouse-click.mp3");
+    clickSound.play();
+  };
+
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -36,8 +40,11 @@ const Header = () => {
         <NavLink
           exact
           to="/"
-          className='hover:text-red-500'
-          onClick={() => setMenuOpen(false)}
+          className="hover:text-red-500"
+          onClick={() => {
+            setMenuOpen(false);
+            handleClick();
+          }}
         >
           Home
         </NavLink>
@@ -49,11 +56,12 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          toScroll='Technologies'
-          className='hover:text-red-500'
+          toScroll="Technologies"
+          className="hover:text-red-500"
           onClick={() => {
-            handleScroll('Technologies'); // Smooth scroll to the section
+            handleScroll("Technologies"); // Smooth scroll to the section
             setMenuOpen(false); // Close the menu
+            handleClick();
           }}
         >
           Technologies
@@ -66,9 +74,12 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Projects"
-          className='hover:text-red-500'
-          onClick={() => setMenuOpen(false)}
+          to="/"
+          className="hover:text-red-500"
+          onClick={() => {
+            setMenuOpen(false);
+            handleClick();
+          }}
         >
           Projects
         </NavLink>
@@ -80,9 +91,12 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Resume"
-          className='hover:text-red-500'
-          onClick={() => setMenuOpen(false)}
+          to="/"
+          className="hover:text-red-500"
+          onClick={() => {
+            setMenuOpen(false);
+            handleClick();
+          }}
         >
           Resume
         </NavLink>
@@ -94,9 +108,12 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Testimonial"
-          className='hover:text-red-500'
-          onClick={() => setMenuOpen(false)}
+          to="/"
+          className="hover:text-red-500"
+          onClick={() => {
+            setMenuOpen(false);
+            handleClick();
+          }}
         >
           Testimonial
         </NavLink>
@@ -108,9 +125,12 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Blog"
-          className='hover:text-red-500'
-          onClick={() => setMenuOpen(false)}
+          to="/"
+          className="hover:text-red-500"
+          onClick={() => {
+            setMenuOpen(false);
+            handleClick();
+          }}
         >
           Blog
         </NavLink>
@@ -122,9 +142,12 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Contacts"
-          className='hover:text-red-500'
-          onClick={() => setMenuOpen(false)}
+          to="/"
+          className="hover:text-red-500"
+          onClick={() => {
+            setMenuOpen(false);
+            handleClick();
+          }}
         >
           Contacts
         </NavLink>
@@ -148,7 +171,10 @@ const Header = () => {
         {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden">
           <button
-            onClick={toggleMenu}
+            onClick={() => {
+              toggleMenu();
+              handleClick();
+            }}
             className="text-2xl text-red-500 focus:outline-none px-4 md:px-0"
           >
             {menuOpen ? <RxCross2 /> : <FaBars />}
@@ -165,7 +191,7 @@ const Header = () => {
           initial={{ x: "-100%" }}
           animate={{ x: menuOpen ? "0%" : "-100%" }}
           transition={{ type: "spring", stiffness: 50 }}
-          className={`fixed top-0 left-0 h-full w-[80%] md:w-[50%] bg-gray-800 text-white shadow-lg z-50`}
+          className={`fixed top-0 left-0 h-full w-[80%] md:w-[50%] bg-[#212529] text-white shadow-lg z-50`}
         >
           <div className="flex justify-between p-4  border-gray-700">
             {/* Profile image and description */}
@@ -177,16 +203,23 @@ const Header = () => {
                   className="w-20 h-20 rounded-full"
                 />
                 <button
-                  onClick={toggleMenu}
+                  onClick={() => {
+                    toggleMenu();
+                    handleClick();
+                  }}
                   className="text-2xl text-red-500 icon-container-round focus:outline-none"
                 >
                   <RxCross2 />
                 </button>
               </div>
               <div>
-                <p className="py-2 text-gray-400" style={{ wordSpacing: '3px' }}>
-                To achieve experience and expertise using my skills in the field of Web development and utilize my skills 
-                for me and companies’ overall growth.
+                <p
+                  className="py-2 text-gray-400"
+                  style={{ wordSpacing: "3px" }}
+                >
+                  To achieve experience and expertise using my skills in the
+                  field of Web development and utilize my skills for me and
+                  companies’ overall growth.
                 </p>
               </div>
             </div>
@@ -214,7 +247,10 @@ const Header = () => {
         {menuOpen && (
           <div
             className="fixed top-0 left-0 w-full h-full bg-black opacity-80 z-40"
-            onClick={toggleMenu} // Clicking on the overlay will close the menu
+            onClick={() => {
+              toggleMenu();
+              handleClick();
+            }} // Clicking on the overlay will close the menu
           ></div>
         )}
       </div>

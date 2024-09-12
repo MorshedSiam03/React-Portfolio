@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* index.css or global.css */
+body {
+    @apply bg-[#212529] text-white;
+  }
+  
+
