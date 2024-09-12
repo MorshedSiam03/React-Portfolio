@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import { SiInvision } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation"; // Import the TypeAnimation component
-import profileImg from "/src/assets/Siam_20-42645-1-removebg-preview.png"; // Import profile image
 import "./style.css";
 
 const Banner = () => {
@@ -83,7 +82,7 @@ const Banner = () => {
               {" "}
               {/* Adjust image container size */}
               <img
-                src={profileImg}
+                src='https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/main/src/assets/Siam_20-42645-1-removebg-preview.png'
                 alt="Profile"
                 className="rounded-md object-cover"
               />

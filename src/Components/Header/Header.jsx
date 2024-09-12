@@ -138,7 +138,7 @@ const Header = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
           <img
-            src="/src/assets/Siam_20-42645-1-removebg-preview.png"
+            src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/main/src/assets/Siam_20-42645-1-removebg-preview.png"
             alt="Logo"
             className="w-12 h-12 mx-2 rounded-full"
           />

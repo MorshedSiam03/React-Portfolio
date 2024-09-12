@@ -48,7 +48,7 @@ const Technologies = () => {
           variants={iconVariants(2.5)}
         >
           <img
-            src="/src/assets/Icon/react.svg"
+            src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/react.svg"
             alt="React"
             className="w-16 h-16"
           />
@@ -57,7 +57,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3)}
-          src="/src/assets/Icon/next-js.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/next-js.svg"
           alt="Next.js"
           className="w-16 h-16"
         />
@@ -65,7 +65,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          src="/src/assets/Icon/nodejs.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/nodejs.svg"
           alt="Node.js"
           className="w-16 h-16"
         />
@@ -73,7 +73,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2)}
-          src="/src/assets/Icon/typescript.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/typescript.svg"
           alt="TypeScript"
           className="w-16 h-16"
         />
@@ -81,7 +81,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          src="/src/assets/Icon/mongodb.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/mongodb.svg"
           alt="MongoDB"
           className="w-16 h-16"
         />
@@ -89,7 +89,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(2)}
-          src="/src/assets/Icon/tailwind-css.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/tailwind-css.svg"
           alt="Tailwind CSS"
           className="w-16 h-16"
         />
@@ -97,7 +97,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3.5)}
-          src="/src/assets/Icon/framer-motion.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/framer-motion.svg"
           alt="Framer Motion"
           className="w-16 h-16"
         />
@@ -105,7 +105,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(5)}
-          src="/src/assets/Icon/firebase.svg"
+          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/firebase.svg"
           alt="Framer Motion"
           className="w-16 h-16"
         />
