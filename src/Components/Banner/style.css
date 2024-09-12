@@ -1,0 +1,30 @@
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: #111; /* Adjust the background color as per your design */
+    border-radius: 12px; /* Add slight rounding to the corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 
+      0 5px 15px rgba(0, 0, 0, 0.5),   /* Outer shadow */
+      0 2px 4px rgba(255, 255, 255, 0.1) inset; /* Inner shadow */
+  }
+  
+  .icon-container:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #d1d5db; /* Light gray color for the icon */
+  }
+  
+  .shadow-custom {
+    box-shadow: 
+    0px -4px 4px rgba(255, 255, 255, 0.2), /* White shadow on top */
+    -4px 0px 4px rgba(255, 255, 255, 0.2), /* White shadow on left */
+    4px 4px 8px rgba(0, 0, 0, 0.7); /* Dark shadow on bottom right */
+  }
+  
