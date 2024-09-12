@@ -18,6 +18,13 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleScroll = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navItems = (
     <>
       <motion.li
@@ -29,9 +36,7 @@ const Header = () => {
         <NavLink
           exact
           to="/"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
+          className='hover:text-red-500'
           onClick={() => setMenuOpen(false)}
         >
           Home
@@ -44,13 +49,14 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Features"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
-          onClick={() => setMenuOpen(false)}
+          toScroll='Technologies'
+          className='hover:text-red-500'
+          onClick={() => {
+            handleScroll('Technologies'); // Smooth scroll to the section
+            setMenuOpen(false); // Close the menu
+          }}
         >
-          Features
+          Technologies
         </NavLink>
       </motion.li>
       <motion.li
@@ -60,10 +66,8 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/Portfolio"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
+          to="/Projects"
+          className='hover:text-red-500'
           onClick={() => setMenuOpen(false)}
         >
           Projects
@@ -77,9 +81,7 @@ const Header = () => {
       >
         <NavLink
           to="/Resume"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
+          className='hover:text-red-500'
           onClick={() => setMenuOpen(false)}
         >
           Resume
@@ -93,9 +95,7 @@ const Header = () => {
       >
         <NavLink
           to="/Testimonial"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
+          className='hover:text-red-500'
           onClick={() => setMenuOpen(false)}
         >
           Testimonial
@@ -109,9 +109,7 @@ const Header = () => {
       >
         <NavLink
           to="/Blog"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
+          className='hover:text-red-500'
           onClick={() => setMenuOpen(false)}
         >
           Blog
@@ -125,9 +123,7 @@ const Header = () => {
       >
         <NavLink
           to="/Contacts"
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "hover:text-red-500"
-          }
+          className='hover:text-red-500'
           onClick={() => setMenuOpen(false)}
         >
           Contacts
@@ -169,7 +165,7 @@ const Header = () => {
           initial={{ x: "-100%" }}
           animate={{ x: menuOpen ? "0%" : "-100%" }}
           transition={{ type: "spring", stiffness: 50 }}
-          className={`fixed top-0 left-0 h-full w-[70%] md:w-[50%] bg-gray-800 text-white shadow-lg z-50`}
+          className={`fixed top-0 left-0 h-full w-[80%] md:w-[50%] bg-gray-800 text-white shadow-lg z-50`}
         >
           <div className="flex justify-between p-4  border-gray-700">
             {/* Profile image and description */}
@@ -188,9 +184,9 @@ const Header = () => {
                 </button>
               </div>
               <div>
-                <p className="py-2  text-gray-400">
-                  Inbio is an all-in-one personal portfolio WordPress theme. You
-                  can customize everything.
+                <p className="py-2 text-gray-400" style={{ wordSpacing: '3px' }}>
+                To achieve experience and expertise using my skills in the field of Web development and utilize my skills 
+                for me and companies’ overall growth.
                 </p>
               </div>
             </div>
