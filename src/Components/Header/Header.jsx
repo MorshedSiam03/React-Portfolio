@@ -198,7 +198,7 @@ const Header = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <img
-                  src="/src/assets/Siam_20-42645-1-removebg-preview.png"
+                  src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/main/src/assets/Siam_20-42645-1-removebg-preview.png"
                   alt="Avatar"
                   className="w-20 h-20 rounded-full"
                 />
