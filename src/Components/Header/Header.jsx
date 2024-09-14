@@ -18,9 +18,10 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    const clickSound = new Audio("https://drive.google.com/file/d/10UrlghkT3MylNdPE71ZDZWmm0LJqexCH/view?usp=sharing");
+    const clickSound = new Audio("/src/assets/Audio/mouse-click.MP3");
     clickSound.play();
   };
+  
 
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
