@@ -57,7 +57,7 @@ const Technologies = () => {
           initial="initial"
           animate="animate"
           variants={iconVariants(3)}
-          src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/27e81f6e367a736d75e5140f6657f7552dc6344e/src/assets/Icon/next-js.svg"
+          src="/src/assets/Icon/NextJs.png"
           alt="Next.js"
           className="w-16 h-16"
         />

@@ -36,7 +36,7 @@ const ProjectCard = ({ title, imageSrc, clientLink, serverLink, liveDemoLink, de
             </h1>
           ))}
         </div>
-        <p className="text-light my-2">{description}</p>
+        <p className="text-light text-justify my-2">{description}</p>
       </div>
     </div>
     );
