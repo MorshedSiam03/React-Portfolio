@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    const clickSound = new Audio("/src/assets/Audio/mouse-click.MP3");
+    const clickSound = new Audio("/Audio/mouse-click.MP3");
     clickSound.play();
   };
   
