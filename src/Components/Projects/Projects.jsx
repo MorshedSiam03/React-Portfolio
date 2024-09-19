@@ -126,19 +126,20 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="relative scroll-mt-12">
+    <div id="Projects" className="relative scroll-mt-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left Column: Heading and First 2 Projects */}
         <div className="flex flex-col gap-10">
           {/* Heading Section with sticky position */}
           <div className="top-0">
-            <h2 className="text-2xl font-bold">🚀 All Creative Works.</h2>
+            <h2 className="text-2xl text-red-500 font-bold">Projects</h2>
+            <h2 className="text-5xl my-2 font-bold">All Creative Works</h2>
             <p className="text-lg text-text-secondary">
               Here's some of my projects that I have worked on.
             </p>
-            <div className="text-primary-color flex items-center gap-1">
+            {/* <div className="text-primary-color flex items-center gap-1">
               <span>Explore More</span>
-            </div>
+            </div> */}
           </div>
 
           {/* First 2 Projects */}

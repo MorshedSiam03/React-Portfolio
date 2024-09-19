@@ -75,9 +75,10 @@ const Header = () => {
         whileHover={{ scale: 1.2 }}
       >
         <NavLink
-          to="/"
+          toScroll="Projects"
           className="hover:text-red-500"
           onClick={() => {
+            handleScroll("Projects");
             setMenuOpen(false);
             handleClick();
           }}
