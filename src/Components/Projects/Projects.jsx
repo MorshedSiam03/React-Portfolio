@@ -178,7 +178,7 @@ const Projects = () => {
           >
             <motion.h2
               variants={textItemVariants} // Animate this element as part of the stagger
-              className="text-2xl text-red-500 font-bold"
+              className="text-2xl text-Red font-bold"
             >
               Projects
             </motion.h2>

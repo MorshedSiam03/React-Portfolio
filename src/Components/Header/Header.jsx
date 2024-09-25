@@ -39,7 +39,7 @@ const Header = () => {
     >
       <NavLink
         to={to}
-        className="hover:text-red-500"
+        className="hover:text-Red"
         onClick={() => {
           if (scrollTo) {
             handleScroll(scrollTo); // Smooth scroll to section if provided
@@ -75,7 +75,7 @@ const Header = () => {
               toggleMenu();
               handleClick();
             }}
-            className="text-2xl text-red-500 focus:outline-none px-4 md:px-0"
+            className="text-2xl text-Red focus:outline-none px-4 md:px-0"
             aria-label={menuOpen ? "Close Menu" : "Open Menu"} // Accessibility for screen readers
           >
             {menuOpen ? <RxCross2 /> : <FaBars />}
@@ -114,7 +114,7 @@ const Header = () => {
                     toggleMenu();
                     handleClick();
                   }}
-                  className="text-2xl text-red-500 icon-container-round focus:outline-none"
+                  className="text-2xl text-Red icon-container-round focus:outline-none"
                   aria-label="Close Menu"
                 >
                   <RxCross2 />

@@ -28,7 +28,7 @@ const Banner = () => {
               Welcome to my world
             </p>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              Hi, I'm <span className="text-red-500">MORSHED SIAM</span>
+              Hi, I'm <span className="text-Red">MORSHED SIAM</span>
               <br />
               {/* TypeAnimation for dynamic role changes */}
               <TypeAnimation
@@ -57,15 +57,15 @@ const Banner = () => {
                 <p className="text-gray-400 uppercase text-sm">Find with me</p>
                 <div className="flex my-5 gap-5 justify-start">
                   <FaFacebook
-                    className="text-2xl icon-container p-3 social-icon"
+                    className="text-2xl icon-container p-4 social-icon"
                     aria-label="Facebook"
                   />
                   <FaTwitter
-                    className="text-2xl icon-container p-3 social-icon"
+                    className="text-2xl icon-container p-4 social-icon"
                     aria-label="Twitter"
                   />
                   <FaLinkedin
-                    className="text-2xl icon-container p-3 social-icon"
+                    className="text-2xl icon-container p-4 social-icon"
                     aria-label="LinkedIn"
                   />
                 </div>

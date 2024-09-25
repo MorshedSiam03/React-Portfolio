@@ -1,22 +1,20 @@
 .icon-container {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 12px; /* Add slight rounding to the corners */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
-    box-shadow: 
-      4px 8px 12px  rgba(255, 255, 255, 0.1),  /* Larger shadow with more spread */
-      0px 4px 6px  rgba(255, 255, 255, 0.1); /* Softer shadow for a more realistic effect */
+    box-shadow:  
+      -10px -10px 20px rgba(255, 255, 255, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 6px; /* Optional: to create rounded corners */
   }
   
   .icon-container:hover {
     transform: scale(1.2); /* Slightly scale up on hover */
     box-shadow: 
-    2px 2px 4px  rgba(255, 255, 255, 0.1),  /* Larger shadow with more spread */
-    0px 2px 4px  rgba(255, 255, 255, 0.1);
+    -10px -10px 20px rgba(255, 255, 255, 0.02), 10px 10px 20px rgba(0, 0, 0, 0.1);
   }
   
   .icon {
