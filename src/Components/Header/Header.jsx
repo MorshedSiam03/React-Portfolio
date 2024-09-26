@@ -61,7 +61,7 @@ const Header = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
           <motion.img
-            src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/"
+            src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Icon/1.png"
             alt="Profile picture of Morshed Siam"
             className="w-24 h-24 mx-2 rounded-full"
             whileInView={{ opacity: 1, y: 0 }}

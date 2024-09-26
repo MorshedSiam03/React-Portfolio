@@ -7,7 +7,7 @@ const PersonalInfo = () => {
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-      className="p-10 rounded-lg shadow-dual grid grid-cols-1 md:grid-cols-2 gap-8"
+      className="p-5 md:p-10 rounded-lg shadow-dual grid grid-cols-1 md:grid-cols-2 gap-8"
     >
       <motion.h2 
       initial={{ opacity: 0, y: 50 }}
@@ -97,14 +97,14 @@ const PersonalInfo = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       className="col-span-1 md:col-span-2 space-y-4">
-        <div className="flex justify-between">
+        <div className="hidden md:flex justify-between">
           <h4 className="text-lg font-semibold">Permanent Address</h4>
           <p className="text-gray-400">
             Holding-379, Village- Prodhaner Char, Gazaria, Munshiganj, PO: 1510
           </p>
         </div>
 
-        <div className="flex justify-between">
+        <div className="hidden md:flex justify-between">
           <h4 className="text-lg font-semibold">Current Location</h4>
           <p className="text-gray-400">58/1 North Jatrabari, Dhaka-1204</p>
         </div>

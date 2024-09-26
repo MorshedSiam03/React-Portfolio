@@ -25,7 +25,7 @@ const Resume = () => {
     };
   
     return (
-      <div id='Resume' className="mt-20 py-5 px-12 text-white min-h-screen font-poppins">
+      <div id='Resume' className="mt-20 py-5 px-4 lg:px-12 text-white min-h-screen font-poppins">
         {/* Header Section */}
         <header className="text-center pt-10 pb-5">
           <motion.h2 
@@ -46,13 +46,13 @@ const Resume = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-between shadow-dual  rounded-lg  mt-6">
+          className="md:flex justify-between shadow-dual  rounded-lg  mt-6">
             {["Education", "Professional Skills", "Experience", "Personal Info"].map((tab) => (
               <button
                 key={tab}
-                className={`px-20 py-7 rounded-lg  text-lg font-semibold transition-colors ${
+                className={`w-full px-20 py-7 rounded-lg  text-lg font-semibold transition-colors ${
                   activeTab === tab
-                    ? "text-Red  shadow-dark" // Active tab styling
+                    ? "text-Red  shadow-dual" // Active tab styling
                     : "text-gray-400 hover:text-Red" // Inactive tab styling
                 }`}
                 onClick={() => setActiveTab(tab)}
@@ -64,7 +64,7 @@ const Resume = () => {
         </header>
   
         {/* Tab Content */}
-        <div className="container mx-auto py-5 px-4">
+        <div className="container mx-auto py-5 md:px-4">
           {renderTabContent()}
         </div>
       </div>

@@ -14,7 +14,7 @@ const Experience = () => {
 
         <div className="p-6 rounded-lg shadow-dual mb-8 hover:bg-zinc-900">
           <h4 className="text-xl font-semibold">Database Manager</h4>
-          <div className="flex justify-between">
+          <div className="md:flex justify-between">
             <p className="text-gray-400 mt-4 text-sm">
               IRD Foundation (Jan 2024 - May 2024)
             </p>

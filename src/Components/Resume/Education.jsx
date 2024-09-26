@@ -16,7 +16,7 @@ const Education = () => {
           <h4 className="text-2xl font-semibold">
             BSc in Computer Science & Engineering
           </h4>
-          <div className="flex justify-between">
+          <div className="md:flex justify-between">
             <p className="text-gray-400 mt-4 text-sm">
               American International University Bangladesh (AIUB)
             </p>
@@ -33,7 +33,7 @@ const Education = () => {
 
         <div className=" p-6 rounded-lg shadow-dual  hover:bg-zinc-900 mb-8">
           <h4 className="text-2xl font-semibold">HSC - Science</h4>
-          <div className="flex justify-between">
+          <div className="md:flex justify-between">
             <p className="text-gray-400 mt-4 text-sm">
               Bir Shrestha Munshi Abdur Rouf College
             </p>
@@ -76,7 +76,7 @@ const Education = () => {
 
         <div className=" p-6 rounded-lg shadow-dual mb-8  hover:bg-zinc-900">
           <h4 className="text-xl font-semibold">Database Manager</h4>
-          <div className="flex justify-between">
+          <div className="md:flex justify-between">
             <p className="text-gray-400 mt-4 text-sm">
               IRD Foundation (Jan 2024 - May 2024)
             </p>
