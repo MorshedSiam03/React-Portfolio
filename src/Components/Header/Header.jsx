@@ -34,8 +34,8 @@ const Header = () => {
     <motion.li
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ type: "spring", stiffness: 20, duration }}
-      whileHover={{ scale: 1.2 }}
+      transition={{ type: "spring", stiffness: 20}}
+      whileHover={{ scale: 1.3 }}
     >
       <NavLink
         to={to}
@@ -60,12 +60,14 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center py-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
-          <img
-            src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/main/src/assets/Siam_20-42645-1-removebg-preview.png"
+          <motion.img
+            src="/src/assets/Icon/1.png"
             alt="Profile picture of Morshed Siam"
-            className="w-12 h-12 mx-2 rounded-full"
+            className="w-24 h-24 mx-2 rounded-full"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -30 }}
+            transition={{ duration: 1 }}
           />
-          <span className="mt-2 text-xl font-poppins">Morshed Siam</span>
         </NavLink>
 
         {/* Hamburger Menu for Mobile */}
@@ -84,13 +86,13 @@ const Header = () => {
 
         {/* Navigation Menu for Desktop */}
         <ul className="hidden lg:flex items-center gap-7 text-lg">
-          <MotionNavLink to="/" label="Home" duration={0.7} />
-          <MotionNavLink to="/" label="Technologies" scrollTo="Technologies" duration={0.8} />
-          <MotionNavLink to="/" label="Projects" scrollTo="Projects" duration={0.9} />
-          <MotionNavLink to="/" label="Resume" duration={1} />
-          <MotionNavLink to="/" label="Testimonial" duration={1.1} />
-          <MotionNavLink to="/" label="Blog" duration={1.2} />
-          <MotionNavLink to="/" label="Contacts" duration={1.3} />
+          <MotionNavLink to="/" label="Home"  />
+          <MotionNavLink to="/" label="Technologies" scrollTo="Technologies"  />
+          <MotionNavLink to="/" label="Projects" scrollTo="Projects"  />
+          <MotionNavLink to="/" label="Resume" scrollTo="Resume"  />
+          <MotionNavLink to="/" label="Testimonial"  />
+          <MotionNavLink to="/" label="Blog"  />
+          <MotionNavLink to="/" label="Contacts" scrollTo="Contact"  />
         </ul>
 
         {/* Mobile Menu */}

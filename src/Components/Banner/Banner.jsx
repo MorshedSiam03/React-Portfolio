@@ -17,7 +17,7 @@ const Banner = () => {
     "A motivated software developer proficient in front-end technologies such as React.js, Next.js, HTML, CSS, JavaScript, and Tailwind CSS. Demonstrated strong problem-solving skills and a collaborative approach to working within a team. Looking to leverage my skills and experience in a dynamic and challenging environment.";
 
   return (
-    <div className="bg-dark-900">
+    <div>
       {" "}
       {/* Ensure background color or styling for the banner */}
       <div className="text-white lg:py-16 px-2">
@@ -51,11 +51,15 @@ const Banner = () => {
             <LetterByLetterParagraph text={paragraphText} />
 
             {/* Social Media and Best Skills Section */}
-            <div className="lg:pt-20 flex flex-col md:flex-row gap-4 md:gap-20 justify-start">
+            <div  className="lg:pt-20 flex flex-col md:flex-row gap-4 md:gap-20 justify-start">
               {/* Social Media Section */}
               <div className="text-left">
                 <p className="text-gray-400 uppercase text-sm">Find with me</p>
-                <div className="flex my-5 gap-5 justify-start">
+                <motion.div 
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -30 }}
+                transition={{ duration: 1 }}
+                className="flex my-5 gap-5 justify-start">
                   <FaFacebook
                     className="text-2xl icon-container p-4 social-icon"
                     aria-label="Facebook"
@@ -68,26 +72,30 @@ const Banner = () => {
                     className="text-2xl icon-container p-4 social-icon"
                     aria-label="LinkedIn"
                   />
-                </div>
+                </motion.div>
               </div>
 
               {/* Best Skills Section */}
               <div className="text-left">
                 <p className="text-gray-400 uppercase text-sm">Best Skill On</p>
-                <div className="flex my-5 gap-5 justify-start">
+                <motion.div 
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -30 }}
+                transition={{ duration: 1 }}
+                className="flex my-5 gap-5 justify-start">
                   <SiInvision
-                    className="text-2xl icon-container p-3 social-icon"
+                    className="text-2xl icon-container p-4 social-icon"
                     aria-label="Invision"
                   />
                   <FaSketch
-                    className="text-2xl icon-container p-3 social-icon"
+                    className="text-2xl icon-container p-4 social-icon"
                     aria-label="Sketch"
                   />
                   <FaFigma
-                    className="text-2xl icon-container p-3 social-icon"
+                    className="text-2xl icon-container p-4 social-icon"
                     aria-label="Figma"
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>

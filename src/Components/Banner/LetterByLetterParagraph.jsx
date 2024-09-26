@@ -7,7 +7,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.03, // Delay between each letter animation
+      staggerChildren: 0.02, // Delay between each letter animation
     },
   },
 };
@@ -24,7 +24,7 @@ const letterVariants = {
 const LetterByLetterParagraph = ({ text }) => {
     return (
         <motion.p
-        className="text-gray-300 text-justify my-8 lg:pr-[190px] text-sm sm:text-base"
+        className="text-gray-300 text-justify my-8 lg:pr-[188px] text-sm sm:text-base"
         style={{ wordSpacing: "3px" }}
         variants={containerVariants}
         initial="hidden"
