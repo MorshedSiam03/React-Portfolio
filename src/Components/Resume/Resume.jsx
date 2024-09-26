@@ -50,7 +50,7 @@ const Resume = () => {
             {["Education", "Professional Skills", "Experience", "Personal Info"].map((tab) => (
               <button
                 key={tab}
-                className={`w-full px-20 py-7 rounded-lg  text-lg font-semibold transition-colors ${
+                className={`w-full px-20 py-5 rounded-lg  text-lg font-semibold transition-colors ${
                   activeTab === tab
                     ? "text-Red  shadow-dual" // Active tab styling
                     : "text-gray-400 hover:text-Red" // Inactive tab styling
