@@ -34,7 +34,7 @@ const Contact = () => {
           className="p-8 rounded-lg shadow-dual lg:col-span-2 text-gray-300 group ">
             <div className="mb-6">
               <img
-                src="/src/assets/Icon/Siam.png"
+                src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Icon/Siam.png"
                 alt="Profile"
                 className="w-full rounded-lg grayscale-[100%] group-hover:grayscale-0"
               />
