@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import {
   FaBars,
   FaFacebook,
+  FaGithub,
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
@@ -28,6 +29,12 @@ const Header = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const socialLinks = [
+    { href: "https://www.facebook.com/Morshed.Siam.543", icon: FaFacebook, label: "Facebook" },
+    { href: "https://github.com/MorshedSiam03", icon: FaGithub, label: "GitHub" },
+    { href: "https://www.linkedin.com/in/morshedsiam/", icon: FaLinkedin, label: "LinkedIn" }
+  ];
 
   // Reusable motion component for navigation links
   const MotionNavLink = ({ to, label, scrollTo, duration }) => (
@@ -145,11 +152,18 @@ const Header = () => {
             {/* Social Media Section */}
             <div className="text-left">
               <p className="text-gray-400 uppercase text-sm">Find with me</p>
-              <div className="flex my-5 gap-5 justify-start">
-                <FaFacebook className="text-2xl icon-container-header p-3 social-icon" />
-                <FaTwitter className="text-2xl icon-container-header p-3 social-icon" />
-                <FaLinkedin className="text-2xl icon-container-header p-3 social-icon" />
-              </div>
+              <motion.div
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -30 }}
+                transition={{ duration: 1 }}
+                className="flex my-5 gap-5 justify-start"
+              >
+                {socialLinks.map(({ href, icon: Icon, label }) => (
+                  <a key={label} href={href} target="_blank" rel="noopener noreferrer">
+                    <Icon className="text-2xl icon-container p-4 social-icon" aria-label={label} />
+                  </a>
+                ))}
+              </motion.div>
             </div>
           </div>
         </motion.div>

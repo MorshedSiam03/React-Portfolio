@@ -1,16 +1,23 @@
 import React from "react";
 import {
   FaFacebook,
-  FaTwitter,
   FaLinkedin,
-  FaSketch,
-  FaFigma,
+  FaReact,
+  FaGithub,
 } from "react-icons/fa";
-import { SiInvision } from "react-icons/si";
-import { TypeAnimation } from "react-type-animation";// Import the TypeAnimation component
+import { TypeAnimation } from "react-type-animation"; // Import the TypeAnimation component
 import { motion } from "framer-motion";
-import "./style.css";
+import { RiNextjsLine } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
 import LetterByLetterParagraph from "./LetterByLetterParagraph";
+import PropTypes from "prop-types";
+import "./style.css";
+const socialLinks = [
+  { href: "https://www.facebook.com/Morshed.Siam.543", icon: FaFacebook, label: "Facebook" },
+  { href: "https://github.com/MorshedSiam03", icon: FaGithub, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/morshedsiam/", icon: FaLinkedin, label: "LinkedIn" }
+];
+
 
 const Banner = () => {
   const paragraphText =
@@ -25,7 +32,7 @@ const Banner = () => {
           {/* Left Column - Text Content */}
           <div className="lg:w-2/3 text-left">
             <p className="text-sm uppercase tracking-widest text-gray-400 mb-2">
-              Welcome to my world
+            Turning Ideas into Digital Reality – Explore My Work
             </p>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
               Hi, I'm <span className="text-Red">MORSHED SIAM</span>
@@ -53,27 +60,21 @@ const Banner = () => {
             {/* Social Media and Best Skills Section */}
             <div  className="lg:pt-20 flex flex-col md:flex-row gap-4 md:gap-20 justify-start">
               {/* Social Media Section */}
-              <div className="text-left">
-                <p className="text-gray-400 uppercase text-sm">Find with me</p>
-                <motion.div 
+            <div className="text-left">
+              <p className="text-gray-400 uppercase text-sm">Find with me</p>
+              <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -30 }}
                 transition={{ duration: 1 }}
-                className="flex my-5 gap-5 justify-start">
-                  <FaFacebook
-                    className="text-2xl icon-container p-4 social-icon"
-                    aria-label="Facebook"
-                  />
-                  <FaTwitter
-                    className="text-2xl icon-container p-4 social-icon"
-                    aria-label="Twitter"
-                  />
-                  <FaLinkedin
-                    className="text-2xl icon-container p-4 social-icon"
-                    aria-label="LinkedIn"
-                  />
-                </motion.div>
-              </div>
+                className="flex my-5 gap-5 justify-start"
+              >
+                {socialLinks.map(({ href, icon: Icon, label }) => (
+                  <a key={label} href={href} target="_blank" rel="noopener noreferrer">
+                    <Icon className="text-2xl icon-container p-4 social-icon" aria-label={label} />
+                  </a>
+                ))}
+              </motion.div>
+            </div>
 
               {/* Best Skills Section */}
               <div className="text-left">
@@ -83,16 +84,16 @@ const Banner = () => {
                 initial={{ opacity: 0, y: -30 }}
                 transition={{ duration: 1 }}
                 className="flex my-5 gap-5 justify-start">
-                  <SiInvision
-                    className="text-2xl icon-container p-4 social-icon"
+                  <FaReact
+                    className="text-2xl text-cyan-500 icon-container p-4 social-icon"
                     aria-label="Invision"
                   />
-                  <FaSketch
+                  <RiNextjsLine
                     className="text-2xl icon-container p-4 social-icon"
                     aria-label="Sketch"
                   />
-                  <FaFigma
-                    className="text-2xl icon-container p-4 social-icon"
+                  <IoLogoJavascript
+                    className="text-2xl text-yellow-500 icon-container p-4 social-icon"
                     aria-label="Figma"
                   />
                 </motion.div>
@@ -119,9 +120,14 @@ const Banner = () => {
         </div>
       </div>
       <hr className="border-0 h-[1px] bg-gray-700" />{" "}
-      {/* Change color to make it visible on dark backgrounds */}
     </div>
   );
 };
+
+// prop-types validation
+Banner.propTypes = {
+  paragraphText: PropTypes.string,
+};
+
 
 export default Banner;
