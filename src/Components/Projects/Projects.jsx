@@ -119,6 +119,30 @@ const Projects = () => {
       ],
     },
     {
+      title: "Breakfast",
+      imageSrc:
+        "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Project-Thumnail/Breakfast.png",
+      clientLink: "https://github.com/MorshedSiam03/Breakfast",
+      serverLink: "https://github.com/MorshedSiam03/Breakfast",
+      liveDemoLink: "https://breakfast-tawny.vercel.app/",
+      description:
+        "Breakfast is an online restaurant where owners showcase their food and services. The platform offers distinct dashboards for buyers, sellers, and admins, with a focus on ease of use and seamless transactions.",
+      techStack: [
+        {
+          name: "Next JS",
+          iconSrc:
+            "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Icon/NextJs.png",
+          bgColor: "text-black bg-white",
+        },
+        {
+          name: "Tailwind CSS",
+          iconSrc:
+            "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/64347c38b259c79f7999c93cfd3700d74ac06e12/src/assets/Icon/tailwind-css.svg",
+          bgColor: "text-cyan-300 bg-blue-500",
+        },
+      ],
+    },
+    {
       title: "BookShop",
       imageSrc:
         "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Project-Thumnail/BookShop.png",
@@ -213,7 +237,7 @@ const Projects = () => {
 
         {/* Right Column: Next 2 Projects */}
         <div className="flex flex-col gap-10">
-          {projects.slice(2, 4).map((project, index) => (
+          {projects.slice(2, 5).map((project, index) => (
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 100 }}
