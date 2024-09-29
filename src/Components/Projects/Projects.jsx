@@ -140,6 +140,12 @@ const Projects = () => {
             "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/64347c38b259c79f7999c93cfd3700d74ac06e12/src/assets/Icon/tailwind-css.svg",
           bgColor: "text-cyan-300 bg-blue-500",
         },
+        {
+          name: "Framer Motion",
+          iconSrc:
+            "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/64347c38b259c79f7999c93cfd3700d74ac06e12/src/assets/Icon/framer-motion.svg",
+          bgColor: "text-pink-500 bg-blue-800",
+        },
       ],
     },
     {
