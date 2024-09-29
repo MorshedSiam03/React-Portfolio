@@ -79,7 +79,7 @@ const Contact = () => {
           >
             <div className="mb-6">
               <img
-                src="/src/assets/Icon/Profile.jpg"
+                src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Icon/Profile.jpg"
                 alt="Profile"
                 className="w-full rounded-lg grayscale-[100%] group-hover:grayscale-0"
               />

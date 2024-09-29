@@ -5,7 +5,6 @@ import {
   FaFacebook,
   FaGithub,
   FaLinkedin,
-  FaTwitter,
 } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import { RxCross2 } from "react-icons/rx";
@@ -97,8 +96,8 @@ const Header = () => {
           <MotionNavLink to="/" label="Technologies" scrollTo="Technologies"  />
           <MotionNavLink to="/" label="Projects" scrollTo="Projects"  />
           <MotionNavLink to="/" label="Resume" scrollTo="Resume"  />
-          <MotionNavLink to="/" label="Testimonial"  />
-          <MotionNavLink to="/" label="Blog"  />
+          <MotionNavLink to="/" label="Testimonial" scrollTo="Testimonial"  />
+          <MotionNavLink to="/" label="Blog" scrollTo="Blog" />
           <MotionNavLink to="/" label="Contacts" scrollTo="Contact"  />
         </ul>
 
@@ -142,10 +141,10 @@ const Header = () => {
             <MotionNavLink to="/" label="Home" duration={1} />
             <MotionNavLink to="/" label="Technologies" scrollTo="Technologies" duration={2} />
             <MotionNavLink to="/" label="Projects" scrollTo="Projects" duration={3} />
-            <MotionNavLink to="/" label="Resume" duration={4} />
-            <MotionNavLink to="/" label="Testimonial" duration={5} />
-            <MotionNavLink to="/" label="Blog" duration={6} />
-            <MotionNavLink to="/" label="Contacts" duration={7} />
+            <MotionNavLink to="/" label="Resume" scrollTo="Resume" duration={4} />
+            <MotionNavLink to="/" label="Testimonial" scrollTo="Testimonial" duration={5} />
+            <MotionNavLink to="/" label="Blog" scrollTo="Blog" duration={6} />
+            <MotionNavLink to="/" label="Contacts" scrollTo="Contacts" duration={7} />
           </ul>
           <hr className="border-0 mt-4 mx-3 h-[1px] bg-gray-700"></hr>
           <div className="lg:pt-20 flex flex-col md:flex-row mt-6 pl-4 gap-4 md:gap-20 justify-start">
