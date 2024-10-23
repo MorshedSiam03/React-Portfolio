@@ -27,7 +27,7 @@ const Banner = () => {
     <div>
       {" "}
       {/* Ensure background color or styling for the banner */}
-      <div className="text-white lg:py-16 px-2">
+      <div className="text-white lg:py-16 mt-24 px-4">
         <div className="container md:mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
           {/* Left Column - Text Content */}
           <div className="lg:w-2/3 text-left">

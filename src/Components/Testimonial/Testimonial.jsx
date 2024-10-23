@@ -23,7 +23,8 @@ const testimonialsData = [
     name: "Nevine Acotanza",
     role: "Chief Operating Officer",
     company: "Rainbow-Themes",
-    image: "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Siam_20-42645-1-removebg-preview.png",
+    image:
+      "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Siam_20-42645-1-removebg-preview.png",
     review: "This is a great testimonial!",
     project: "Android App Development",
     date: "Mar 4, 2015 - Aug 30, 2021",
@@ -34,7 +35,8 @@ const testimonialsData = [
     name: "John Doe",
     role: "Software Engineer",
     company: "Google",
-    image: "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Siam_20-42645-1-removebg-preview.png",
+    image:
+      "https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Siam_20-42645-1-removebg-preview.png",
     review: "Another amazing testimonial!",
     project: "Website Development",
     date: "Jan 10, 2019 - Dec 20, 2020",
@@ -68,11 +70,12 @@ const StarRating = ({ rating }) => {
 const Testimonial = () => {
   return (
     <div id="Testimonial" className="pt-20 pb-16 relative">
-      <motion.div 
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: 50 }}
-      transition={{ duration: 1 }}
-      className="text-center">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        transition={{ duration: 1 }}
+        className="text-center"
+      >
         <p className="text-Red uppercase tracking-wide">What clients say</p>
         <h2 className="text-5xl font-bold">Testimonial</h2>
       </motion.div>
@@ -95,11 +98,12 @@ const Testimonial = () => {
           <SwiperSlide key={testimonial.id}>
             <div className="md:flex justify-center px-2 lg:px-40 mb-8 py-10">
               {/* Left Section - Image and Details */}
-              <motion.div 
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="p-5 rounded-xl md:w-1/3 text-left shadow-dual">
+              <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1 }}
+                className="p-5 rounded-xl md:w-1/3 text-left shadow-dual"
+              >
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
@@ -113,11 +117,12 @@ const Testimonial = () => {
               </motion.div>
 
               {/* Right Section - Testimonial Card */}
-              <motion.div 
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 50 }}
-              transition={{ duration: 1 }}
-              className="md:w-2/3">
+              <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 50 }}
+                transition={{ duration: 1 }}
+                className="md:w-2/3"
+              >
                 <img
                   src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Icon/quote.png"
                   className="mx-4 w-32 hidden md:block opacity-65"
@@ -145,20 +150,22 @@ const Testimonial = () => {
           </SwiperSlide>
         ))}
         {/* Custom Navigation Buttons */}
-        <motion.div 
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 20 }}
-        transition={{ duration: 1 }}
-        className="absolute top-12 hidden md:block transform -translate-y-1/2 right-20 lg:right-60 z-10">
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 1 }}
+          className="absolute top-12 hidden md:block transform -translate-y-1/2 right-20 lg:right-60 z-10"
+        >
           <button className="custom-prev  p-5 rounded-md shadow-dual hover:bg-gray-700 transition-all">
             <FaArrowLeft className="text-white" />
           </button>
         </motion.div>
-        <motion.div 
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -20 }}
-        transition={{ duration: 1 }}
-        className="absolute top-12 hidden md:block  transform -translate-y-1/2 right-2 lg:right-40 z-10">
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 1 }}
+          className="absolute top-12 hidden md:block  transform -translate-y-1/2 right-2 lg:right-40 z-10"
+        >
           <button className="custom-next p-5 rounded-md shadow-dual hover:bg-gray-700 transition-all">
             <FaArrowRight className="text-white" />
           </button>

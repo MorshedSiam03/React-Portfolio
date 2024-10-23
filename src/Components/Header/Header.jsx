@@ -36,7 +36,7 @@ const Header = () => {
   ];
 
   // Reusable motion component for navigation links
-  const MotionNavLink = ({ to, label, scrollTo, duration }) => (
+  const MotionNavLink = ({ to, label, scrollTo}) => (
     <motion.li
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
@@ -63,7 +63,7 @@ const Header = () => {
 
   return (
     <div className="text-white relative">
-      <div className="container mx-auto flex justify-between items-center py-4">
+      <div className="w-full z-10 fixed !bg-[#212529] shadow-lg top-0 mx-auto flex justify-between items-center md:pr-8 md:pl-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
           <motion.img
