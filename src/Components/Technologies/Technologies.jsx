@@ -16,7 +16,7 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div id="Technologies" className="my-12 py-8  px-2">
+    <div id="Technologies" className="my-12 py-8 scroll-mt-28  px-2">
       <div>
         <motion.h1
           whileInView={{ opacity: 1, y: 0 }}

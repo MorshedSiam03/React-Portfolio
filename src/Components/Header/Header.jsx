@@ -63,13 +63,13 @@ const Header = () => {
 
   return (
     <div className="text-white relative">
-      <div className="w-full z-10 fixed !bg-[#212529] shadow-lg top-0 mx-auto flex justify-between items-center md:pr-8 md:pl-4">
+      <div className="w-full z-10 fixed !bg-[#212529] shadow-md top-0 mx-auto flex justify-between items-center md:pr-8 md:pl-4">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
           <motion.img
             src="https://raw.githubusercontent.com/MorshedSiam03/React-Portfolio/refs/heads/main/src/assets/Icon/1.png"
             alt="Profile picture of Morshed Siam"
-            className="w-24 h-24 mx-2 rounded-full"
+            className="w-20 h-20 md:w-24 md:h-24 mx-2 rounded-full"
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -30 }}
             transition={{ duration: 1 }}
@@ -86,7 +86,7 @@ const Header = () => {
             className="text-2xl text-Red focus:outline-none px-4 md:px-0"
             aria-label={menuOpen ? "Close Menu" : "Open Menu"} // Accessibility for screen readers
           >
-            {menuOpen ? <RxCross2 /> : <FaBars />}
+            {menuOpen ? <RxCross2 /> : <FaBars size={32} />}
           </button>
         </div>
 

@@ -53,7 +53,7 @@ const Contact = () => {
   ];
 
   return (
-    <div id="Contact" className="mt-5 py-10 px-2 lg:px-20">
+    <div id="Contact" className="mt-5 py-10 scroll-mt-16 px-2 lg:px-20">
       <motion.h1
         className="text-Red font-semibold text-xl text-center"
         initial={{ opacity: 0, y: -20 }}

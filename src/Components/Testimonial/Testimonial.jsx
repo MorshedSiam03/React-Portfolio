@@ -69,7 +69,7 @@ const StarRating = ({ rating }) => {
 
 const Testimonial = () => {
   return (
-    <div id="Testimonial" className="pt-20 pb-16 relative">
+    <div id="Testimonial" className="pt-20 pb-16 scroll-mt-10 relative">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 50 }}

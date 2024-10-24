@@ -25,7 +25,7 @@ const Resume = () => {
     };
   
     return (
-      <div id='Resume' className="mt-20 py-5 px-4 lg:px-12 text-white min-h-screen font-poppins">
+      <div id='Resume' className="mt-20 py-5 scroll-mt-16 px-4 lg:px-12 text-white min-h-screen font-poppins">
         {/* Header Section */}
         <header className="text-center pt-10 pb-5">
           <motion.h2 
